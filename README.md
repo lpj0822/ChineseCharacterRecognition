@@ -1,2 +1,4 @@
 # ChineseCharacterRecognition
-Chinese Character Recognition
+该项目主要是汉字书法识别，这里识别100种汉字书法，训练的模型都是基于Caffe。
+需要训练数据可以加入320367853群，向群主索要
+

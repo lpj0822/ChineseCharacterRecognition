@@ -1,0 +1,27 @@
+#net: "/home/wfw/lipj/TMD/VGG_19.prototxt"
+train_net: "/home/wfw/lipj/TMD/train_resnext101-32x4d.prototxt"
+test_net: "/home/wfw/lipj/TMD/val_resnext101-32x4d.prototxt"
+test_iter: 9812
+test_interval: 1000
+test_initialization: False
+display: 100
+base_lr: 0.00001
+#lr_policy: "poly"
+power: 0.9
+lr_policy: "multistep"
+#rms_decay: 0.9
+#delta: 0.9
+momentum: 0.9
+gamma: 0.1
+average_loss: 100
+iter_size: 4
+stepvalue: 140000
+stepvalue: 160000
+max_iter: 200000
+weight_decay: 0.0005
+regularization_type: "L2"
+snapshot:1000
+snapshot_prefix: "/home/wfw/lipj/TMD/snapshot/TMD_renetxt_"
+solver_mode: GPU
+device_id: 0
+type: "SGD"
